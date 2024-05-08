@@ -11,7 +11,7 @@
      
      <div class="container mt-4">
 
-          <h1 class="text-center">All Students</h1><br/>
+          <h1 class="text-center">All Students<a href="{{ route('student.create') }}" class="btn btn-primary float-end">Add New Student</a></h1><br/>
           @if(session('status'))
           <div class="alert alert-success">
                 {{ session('status') }}
@@ -39,8 +39,8 @@
                         <td><img src="{{ asset('uploads/students/'.$student->stu_image)}}" height="50px" width="50px" alt="alt"/></td>
                         <td>{{$student->stu_gender}}</td>
                         <td>
-                            <a href="" class="btn btn-success">Edit</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                            <a href="{{ route('student.edit',$student->id) }}" class="btn btn-success">Edit</a>
+                            <a href="{{ route('student.delete',$student->id) }}" class="btn btn-danger">Delete</a>
                         </td>
                        </tr>
                     @endforeach

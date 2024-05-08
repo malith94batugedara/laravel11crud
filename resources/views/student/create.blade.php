@@ -10,7 +10,7 @@
 <body>
        <div class="container mt-4">
 
-              <h1 class="text-center">Add New Student</h1>
+              <h1 class="text-center">Add New Student<a href="{{ route('student.index') }}" class="btn btn-success float-end">All Students</a></h1>
 
               <div>
                 @if ($errors->any())
@@ -48,19 +48,19 @@
                             <label>Stu Grade</label>
                             <select name="stugrade" class="form-control">
                                  <option>---choose grade---</option>
-                                 <option>Grade 1</option>
-                                 <option>Grade 2</option>
-                                 <option>Grade 3</option>
-                                 <option>Grade 4</option>
-                                 <option>Grade 5</option>
-                                 <option>Grade 6</option>
-                                 <option>Grade 7</option>
-                                 <option>Grade 8</option>
-                                 <option>Grade 9</option>
-                                 <option>Grade 10</option>
-                                 <option>Grade 11</option>
-                                 <option>Grade 12</option>
-                                 <option>Grade 13</option>
+                                 <option value="1">Grade 1</option>
+                                 <option value="2">Grade 2</option>
+                                 <option value="3">Grade 3</option>
+                                 <option value="4">Grade 4</option>
+                                 <option value="5">Grade 5</option>
+                                 <option value="6">Grade 6</option>
+                                 <option value="7">Grade 7</option>
+                                 <option value="8">Grade 8</option>
+                                 <option value="9">Grade 9</option>
+                                 <option value="10">Grade 10</option>
+                                 <option value="11">Grade 11</option>
+                                 <option value="12">Grade 12</option>
+                                 <option value="13">Grade 13</option>
                             </select>
                         </div>
                         <div class="mb-3">
